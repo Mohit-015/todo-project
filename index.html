@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>To-Do Lists</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="img-bg"></div>
+    <div class="card">
+        <div class="card-bg">
+            <div class="items">
+                <div class="btn-parent">
+                    <button type="button" id="addtodo">Add todo</button>
+                </div>
+                <p class="titlet">TODO</p>
+            </div>
+            <div class="todolist">
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay d-none" id="overlay-t">
+        <div class="ovl-card">
+            <div class="ovl-contents">
+                <label for="ovl-text">Todo</label>
+
+                <input type="text" id="ovl-text">
+
+                <label for="ovl-desc">Description</label>
+
+                <textarea name="" id="ovl-desc" cols="30" rows="7"></textarea>
+
+                <label for="ovl-sel">priority</label>
+
+                <select name="" id="ovl-sel">
+                    <option value="!"> low </option>
+                    <option value="!!"> medium </option>
+                    <option value="!!!"> high </option>
+                </select>
+
+                <div class="ovl-btn">
+                    <button type="button" id="save">Save</button>
+                </div>
+                <div class="ovl-btn">
+                    <button type="button" id="back">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
